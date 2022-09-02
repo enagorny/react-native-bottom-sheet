@@ -36,7 +36,7 @@ export const useScrollHandler = (
         handleOnScroll(event, context);
 
         if (onScroll) {
-          runOnJS(onScroll)({ nativeEvent: event });
+          onScroll({ nativeEvent: event });
         }
       },
       onBeginDrag: (event, context) => {
